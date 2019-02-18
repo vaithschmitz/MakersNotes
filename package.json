@@ -1,0 +1,8 @@
+{
+  "name": "Noted",
+  "version": "1.0.0",
+  "description": "Note-Taking App",
+  "main": "index.js",
+  "author": "<vaithschmitz@googlemail.com>",
+  "license": "MIT"
+}
