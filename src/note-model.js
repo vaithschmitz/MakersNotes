@@ -1,11 +1,8 @@
 class Note {
-    constructor(text){
-        this.text = text
-    }
-    getNote(){
-        return this.text
-    }
+  constructor(text) {
+    this.text = text;
+  }
+  getNote() {
+    return this.text;
+  }
 }
-
-
-
