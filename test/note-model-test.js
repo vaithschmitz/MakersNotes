@@ -9,6 +9,8 @@ const assert = {
   }
 
 };
+
+
 function noteHasText(){
   note = new Note('Hello');
   assert.isTrue(note.text === "Hello");
@@ -28,7 +30,16 @@ function noteListShowAll(){
   assert.isTrue(list.getNotes().length === 3)
 }
 
+function noteListView(){
+  list = new NoteList();
+  list.createNote('hey');
+  list.createNote('bye');
+  list.createNote('sup');
+  listView = new ListView(list); 
+  assert.isTrue(listView.display() === `<ul><li><div>hey</div></li><li><div>bye</div></li><li><div>sup</div></li></ul>`) 
+}
 
 noteHasText();
 noteListStoring();
 noteListShowAll();
+noteListView();
