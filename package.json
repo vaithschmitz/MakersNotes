@@ -4,5 +4,8 @@
   "description": "Note-Taking App",
   "main": "index.js",
   "author": "<vaithschmitz@googlemail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "http-server": "^0.11.1"
+  }
 }
