@@ -1,12 +1,14 @@
-function $(x) {return document.getElementById(x);}
+class Controller{
+    constructor(list){
+        this.list = NoteList
 
-function greetMe(){
-    let greet = $('app');
-    if (greet.innerHTML === "howdy"){
-        greet.innerHTML = "hello";
-    } else{
-        greet.innerHTML = 'howdy'
     }
+
+    $(x) {return document.getElementById(x);}
+
+    addContent() {
+        $('app').innerHTML = list.display()
+    }
+
 }
 
-$('button1').addEventListener('click', greetMe())
